@@ -1,0 +1,5 @@
+---
+- name: Install Little Snitch via Homebrew Cask
+  homebrew_cask:
+    name: little-snitch
+  when: ansible_os_family == "Darwin"
